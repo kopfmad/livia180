@@ -1,0 +1,14 @@
+.App2 {
+  background-image: url(./images/fundo.png);
+  height: 100vh;
+  animation: movebg 20s infinite ease-in-out alternate;
+}
+
+@keyframes movebg {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
