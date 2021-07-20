@@ -7,11 +7,36 @@
           box-sizing: border-box;
 }
 
-.App2 {
+.App {
   background-image: url(./images/fundo.png);
   height: 100vh;
-  -webkit-animation: movebg 15s infinite ease-in-out alternate;
-          animation: movebg 15s infinite ease-in-out alternate;
+  -webkit-animation: movebg 20s infinite ease-in-out alternate;
+          animation: movebg 20s infinite ease-in-out alternate;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(240px, 1300px) minmax(1rem, 1fr);
+}
+.App .livia_container {
+  grid-column: 2/3;
+  justify-self: center;
+  height: 20vw;
+  width: 20vw;
+  background-image: url(./images/livia1.png);
+  margin-top: 10vh;
+  border-radius: 50%;
+  -webkit-animation: liviafundo 10s infinite;
+          animation: liviafundo 10s infinite;
+  -webkit-box-shadow: 0px 5px 5px black;
+          box-shadow: 0px 5px 5px black;
+  -webkit-filter: grayscale(0.8);
+          filter: grayscale(0.8);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+.App .livia_container:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @-webkit-keyframes movebg {
@@ -29,6 +54,58 @@
   }
   to {
     background-position: right;
+  }
+}
+@-webkit-keyframes liviafundo {
+  0% {
+    background-image: url(./images/livia1.png);
+  }
+  30% {
+    background-image: url(./images/livia1.png);
+  }
+  35% {
+    background-image: url(./images/livia2.png);
+  }
+  60% {
+    background-image: url(./images/livia2.png);
+  }
+  65% {
+    background-image: url(./images/livia3.png);
+  }
+  93% {
+    background-image: url(./images/livia3.png);
+  }
+  98% {
+    background-image: url(./images/livia1.png);
+  }
+  100% {
+    background-image: url(./images/livia1.png);
+  }
+}
+@keyframes liviafundo {
+  0% {
+    background-image: url(./images/livia1.png);
+  }
+  30% {
+    background-image: url(./images/livia1.png);
+  }
+  35% {
+    background-image: url(./images/livia2.png);
+  }
+  60% {
+    background-image: url(./images/livia2.png);
+  }
+  65% {
+    background-image: url(./images/livia3.png);
+  }
+  93% {
+    background-image: url(./images/livia3.png);
+  }
+  98% {
+    background-image: url(./images/livia1.png);
+  }
+  100% {
+    background-image: url(./images/livia1.png);
   }
 }
 /*# sourceMappingURL=index.css.map */

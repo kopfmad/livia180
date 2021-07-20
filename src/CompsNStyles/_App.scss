@@ -1,7 +1,33 @@
-.App2 {
+@use './consts' as *;
+
+.App {
   background-image: url(./images/fundo.png);
   height: 100vh;
   animation: movebg 20s infinite ease-in-out alternate;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(240px, 1300px) minmax(
+      1rem,
+      1fr
+    );
+
+  .livia_container {
+    grid-column: 2/3;
+    justify-self: center;
+    height: 20vw;
+    width: 20vw;
+    background-image: url(./images/livia1.png);
+    margin-top: 10vh;
+    border-radius: 50%;
+    animation: liviafundo 10s infinite;
+    box-shadow: 0px 5px 5px $color-primary-a;
+    filter: grayscale(0.8);
+    transition: 1s ease;
+  }
+
+  .livia_container:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+  }
 }
 
 @keyframes movebg {
@@ -10,5 +36,32 @@
   }
   to {
     background-position: right;
+  }
+}
+
+@keyframes liviafundo {
+  0% {
+    background-image: url(./images/livia1.png);
+  }
+  30% {
+    background-image: url(./images/livia1.png);
+  }
+  35% {
+    background-image: url(./images/livia2.png);
+  }
+  60% {
+    background-image: url(./images/livia2.png);
+  }
+  65% {
+    background-image: url(./images/livia3.png);
+  }
+  93% {
+    background-image: url(./images/livia3.png);
+  }
+  98% {
+    background-image: url(./images/livia1.png);
+  }
+  100% {
+    background-image: url(./images/livia1.png);
   }
 }
