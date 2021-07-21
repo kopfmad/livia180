@@ -1,22 +1,32 @@
 import './index.css'
 import MyInput from './CompsNStyles/MyInput'
 import Resultado from './CompsNStyles/Resultado'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
   let [numero1, setNumero1] = useState(0)
   let [numero2, setNumero2] = useState(0)
   let [resultado, setResultado] = useState(0)
 
-  function alteraUm(value) {
-    setNumero1(parseInt(value))
+  useEffect(() => {
+    console.log(1)
+  }, [resultado])
+
+  function alteraUm(valor) {
+    setNumero1((numero1 = parseInt(valor))) //Isso acontece na hora
     let aleat = Math.floor(Math.random() * 4)
-    setResultado(numero1 + numero2 + aleat)
+    setResultado(numero1 + numero2)
+    console.log('numero 1 é ' + numero1)
+    console.log('numero 2 é ' + numero2)
+    console.log('resultado é ' + resultado)
   }
-  function alteraDois(value) {
+  function alteraDois(valor) {
+    setNumero2((numero2 = parseInt(valor)))
     let aleat = Math.floor(Math.random() * 4)
-    setNumero2(parseInt(value))
-    setResultado(numero1 + numero2 + aleat)
+    setResultado(numero1 + numero2)
+    console.log('numero 1 é ' + numero1)
+    console.log('numero 2 é ' + numero2)
+    console.log('resultado é ' + resultado)
   }
 
   return (
