@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 
-export default function Resultado() {
-  let [finalresult, setFinalresult] = useState('20')
-
+export default function Resultado(props) {
   return (
     <div className="Resultado">
       {' '}
-      O resultado é <b>{finalresult}</b>
+      O resultado da soma é <b>{props.resultado}</b>
     </div>
   )
 }
