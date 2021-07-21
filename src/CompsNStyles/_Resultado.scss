@@ -1,8 +1,17 @@
 @use "./consts" as *;
 
 .Resultado {
+  grid-column: 2/3;
   padding: $padding-1;
   margin: $margin-1;
-  background-color: $color-primary-d;
-  grid-column: 2/3;
+  border: 2px solid purple;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: $font-size-2;
+  resize: none;
+  background-color: rgb(146, 91, 201);
+  display: grid;
+  place-items: center;
+  text-align: center;
 }

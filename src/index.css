@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 *,
 *::before,
 *::after {
@@ -5,11 +6,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Permanent Marker", cursive;
 }
 
 .App {
   background-image: url(./images/fundo.png);
-  height: 100vh;
+  min-height: 100vh;
   -webkit-animation: movebg 20s infinite ease-in-out alternate;
           animation: movebg 20s infinite ease-in-out alternate;
   display: grid;
@@ -23,6 +25,7 @@
   min-height: 250px;
   min-width: 250px;
   background-image: url(./images/livia1.png);
+  background-position: center;
   margin-top: 10vh;
   border-radius: 50%;
   -webkit-animation: liviafundo 10s infinite;
@@ -114,12 +117,48 @@
   grid-column: 2/3;
   padding: calc(1rem + 0vw);
   margin: calc(1rem + 0vw);
+  border: 2px solid purple;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: calc(1rem + 1vw);
+  resize: none;
+  background-color: #925bc9;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+::-moz-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
 }
 
 .Resultado {
+  grid-column: 2/3;
   padding: calc(1rem + 0vw);
   margin: calc(1rem + 0vw);
-  background-color: rgba(0, 0, 0, 0.25);
-  grid-column: 2/3;
+  border: 2px solid purple;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: calc(1rem + 1vw);
+  resize: none;
+  background-color: #925bc9;
+  display: grid;
+  place-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
