@@ -1,0 +1,8 @@
+@use "./consts" as *;
+
+.Resultado {
+  padding: $padding-1;
+  margin: $margin-1;
+  background-color: $color-primary-d;
+  grid-column: 2/3;
+}

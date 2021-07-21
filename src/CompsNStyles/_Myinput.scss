@@ -1,0 +1,7 @@
+@use './consts' as *;
+
+.MyInput {
+  grid-column: 2/3;
+  padding: $padding-1;
+  margin: $margin-1;
+}

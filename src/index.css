@@ -20,6 +20,8 @@
   justify-self: center;
   height: 20vw;
   width: 20vw;
+  min-height: 250px;
+  min-width: 250px;
   background-image: url(./images/livia1.png);
   margin-top: 10vh;
   border-radius: 50%;
@@ -107,5 +109,17 @@
   100% {
     background-image: url(./images/livia1.png);
   }
+}
+.MyInput {
+  grid-column: 2/3;
+  padding: calc(1rem + 0vw);
+  margin: calc(1rem + 0vw);
+}
+
+.Resultado {
+  padding: calc(1rem + 0vw);
+  margin: calc(1rem + 0vw);
+  background-color: rgba(0, 0, 0, 0.25);
+  grid-column: 2/3;
 }
 /*# sourceMappingURL=index.css.map */
